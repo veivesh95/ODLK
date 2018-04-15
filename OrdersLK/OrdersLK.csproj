@@ -33,8 +33,27 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13\lib\itextsharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,23 +65,301 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountsPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountsPage.Designer.cs">
+      <DependentUpon>AccountsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDelivery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDelivery.designer.cs">
+      <DependentUpon>AddDelivery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddupdtDelCatergory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddupdtDelCatergory.Designer.cs">
+      <DependentUpon>AddupdtDelCatergory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addupdtdelInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addupdtdelInventory.Designer.cs">
+      <DependentUpon>addupdtdelInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="b_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="b_add.designer.cs">
+      <DependentUpon>b_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="b_home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="b_home.designer.cs">
+      <DependentUpon>b_home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="b_update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="b_update.designer.cs">
+      <DependentUpon>b_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="b_update_single.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="b_update_single.Designer.cs">
+      <DependentUpon>b_update_single.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckDeliveryByDeliveryboy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckDeliveryByDeliveryboy.designer.cs">
+      <DependentUpon>CheckDeliveryByDeliveryboy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionManager.cs" />
+    <Compile Include="DeliveryMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeliveryMain.designer.cs">
+      <DependentUpon>DeliveryMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="directorleaverequestapproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="directorleaverequestapproval.designer.cs">
+      <DependentUpon>directorleaverequestapproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="emailThis.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Form1.designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IncomeStatement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncomeStatement.Designer.cs">
+      <DependentUpon>IncomeStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions.cs" />
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddupdtDelSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddupdtDelSupplier.Designer.cs">
+      <DependentUpon>AddupdtDelSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryANDSupplierHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryANDSupplierHome.Designer.cs">
+      <DependentUpon>InventoryANDSupplierHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeaveRequest.designer.cs">
+      <DependentUpon>LeaveRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mianform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mianform.designer.cs">
+      <DependentUpon>mianform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PettyCashPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PettyCashPage.Designer.cs">
+      <DependentUpon>PettyCashPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="PurchaseProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseProduct.Designer.cs">
+      <DependentUpon>PurchaseProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterEmployee.designer.cs">
+      <DependentUpon>RegisterEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salary.designer.cs">
+      <DependentUpon>Salary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchUpdateDeleteEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchUpdateDeleteEmployee.designer.cs">
+      <DependentUpon>SearchUpdateDeleteEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statementpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statementpage.Designer.cs">
+      <DependentUpon>Statementpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierPurchases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupplierPurchases.Designer.cs">
+      <DependentUpon>SupplierPurchases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_add.designer.cs">
+      <DependentUpon>s_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_home.designer.cs">
+      <DependentUpon>s_home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewApprovals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewApprovals.designer.cs">
+      <DependentUpon>ViewApprovals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewConfirmedDeliveryDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewConfirmedDeliveryDetails.designer.cs">
+      <DependentUpon>ViewConfirmedDeliveryDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewEmployee.designer.cs">
+      <DependentUpon>ViewEmployee.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AccountsPage.resx">
+      <DependentUpon>AccountsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDelivery.resx">
+      <DependentUpon>AddDelivery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddupdtDelCatergory.resx">
+      <DependentUpon>AddupdtDelCatergory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addupdtdelInventory.resx">
+      <DependentUpon>addupdtdelInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="b_add.resx">
+      <DependentUpon>b_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="b_home.resx">
+      <DependentUpon>b_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="b_update.resx">
+      <DependentUpon>b_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="b_update_single.resx">
+      <DependentUpon>b_update_single.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckDeliveryByDeliveryboy.resx">
+      <DependentUpon>CheckDeliveryByDeliveryboy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeliveryMain.resx">
+      <DependentUpon>DeliveryMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="directorleaverequestapproval.resx">
+      <DependentUpon>directorleaverequestapproval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncomeStatement.resx">
+      <DependentUpon>IncomeStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddupdtDelSupplier.resx">
+      <DependentUpon>AddupdtDelSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryANDSupplierHome.resx">
+      <DependentUpon>InventoryANDSupplierHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeaveRequest.resx">
+      <DependentUpon>LeaveRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mianform.resx">
+      <DependentUpon>mianform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PettyCashPage.resx">
+      <DependentUpon>PettyCashPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseProduct.resx">
+      <DependentUpon>PurchaseProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterEmployee.resx">
+      <DependentUpon>RegisterEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salary.resx">
+      <DependentUpon>Salary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchUpdateDeleteEmployee.resx">
+      <DependentUpon>SearchUpdateDeleteEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statementpage.resx">
+      <DependentUpon>Statementpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplierPurchases.resx">
+      <DependentUpon>SupplierPurchases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_add.resx">
+      <DependentUpon>s_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_home.resx">
+      <DependentUpon>s_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewApprovals.resx">
+      <DependentUpon>ViewApprovals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewConfirmedDeliveryDetails.resx">
+      <DependentUpon>ViewConfirmedDeliveryDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewEmployee.resx">
+      <DependentUpon>ViewEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +372,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inv.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accounts-consultancy-service-250x250.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orders.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
