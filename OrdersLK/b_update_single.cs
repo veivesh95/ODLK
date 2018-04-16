@@ -25,6 +25,9 @@ namespace OrdersLK
 
         private void b_update_single_Load(object sender, EventArgs e)
         {
+            txtCusName.Enabled = false;
+            txtContact.Enabled = false;
+
             this.bId = sa.buyerObj;
             DataTable tempTable = Functions.GetListData("Customer", "CustomerId", this.bId);
 
@@ -42,26 +45,27 @@ namespace OrdersLK
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if (Functions.isValid(txtMail.Text))
+            if (this.txtMail.Text != "")
             {
-                string query_ = "UPDATE Customer SET Email = '" + txtMail.Text + "' WHERE CustomerId = '" + this.bId + "'";
-
-                try
+                if (Functions.EmailIsValid(this.txtMail.Text))
                 {
-                    Functions.ExecuteQuery(query_);
-                    txtMail.Enabled = false;
-                    this.Close();
+                    string query_ = "UPDATE Customer SET Email = '" + txtMail.Text + "' WHERE CustomerId = '" + this.bId + "'";
+
+                    try
+                    {
+                        Functions.ExecuteQuery(query_);
+                        txtMail.Enabled = false;
+                        this.Close();
+                    }
+                    catch (Exception)
+                    {
+                        throw;
+                    }
                 }
-                catch (Exception)
+                else
                 {
-                    throw;
+                    MessageBox.Show("Please recheck your Email address");
                 }
-
-            }
-
-            else
-            {
-                MessageBox.Show("Invalid data. Please recheck.");
             }
         }
 

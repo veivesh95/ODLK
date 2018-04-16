@@ -649,6 +649,76 @@ namespace OrdersLK
             return result;
         }
 
+        public static DataTable searchPendingOrdersTable(String searchColumn, String searchKey)
+        {
+            String query = "SELECT OrderId, OrderDate, OrderStatus, PaymentStatus, CustomerId, EmpId, TotalAmount FROM Orders WHERE " + searchColumn + " LIKE '%" + searchKey + "%' AND OrderStatus = 'Confirmed'";
+            DataTable data = new DataTable();
+            try
+            {
+                con.Open();
+                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+                adapter.Fill(data);
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            finally
+            {
+                con.Close();
+            }
+            return data;
+        }
+
+        public static DataTable showTableSales(Int32 month)
+        {
+            String query = "SELECT OrderId, OrderDate, OrderStatus, PaymentStatus, CustomerId, EmpId, TotalAmount FROM Orders WHERE MONTH(OrderDate) = '" + month + "'";
+            DataTable data = new DataTable();
+            try
+            {
+                con.Open();
+                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+                adapter.Fill(data);
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            finally
+            {
+                con.Close();
+            }
+            return data;
+        }
+
+        public static DataTable showTableSales(String status)
+        {
+            String query = "SELECT OrderId, OrderDate, OrderStatus, PaymentStatus, CustomerId, EmpId, TotalAmount FROM Orders WHERE OrderStatus = '" + status + "'";
+            DataTable data = new DataTable();
+            try
+            {
+                con.Open();
+                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+                adapter.Fill(data);
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            finally
+            {
+                con.Close();
+            }
+            return data;
+        }
+
+
         //validation methods
 
         public static bool isText(string values)
@@ -660,22 +730,33 @@ namespace OrdersLK
 
         }
 
+        public static bool isName(string values)
+        {
+            var name = values.Trim();
+            if (Regex.IsMatch(name, @"^[\p{L} \.\-]+$"))
+                return true;
+            return false;
+
+
+        }
+
         public static bool isValid(string emailaddress)
         {
-            try
+            if (emailaddress != "" && emailaddress != null)
             {
-                if (emailaddress != null)
+                try
                 {
                     MailAddress m = new MailAddress(emailaddress);
                     return true;
                 }
-                else
+
+                catch (FormatException)
+                {
                     return false;
+                }
             }
-            catch (FormatException)
-            {
-                return false;
-            }
+            else return false;
+
         }
 
         public static bool isContact(String number)

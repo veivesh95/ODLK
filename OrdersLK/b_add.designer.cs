@@ -46,9 +46,9 @@
             this.customerName = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.homebtn = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.backbtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.homebtn.SuspendLayout();
@@ -58,7 +58,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(190, 98);
+            this.label1.Location = new System.Drawing.Point(148, 97);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(88, 13);
             this.label1.TabIndex = 0;
@@ -130,7 +130,7 @@
             this.groupBox1.Controls.Add(this.customerContact);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(193, 143);
+            this.groupBox1.Location = new System.Drawing.Point(151, 143);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(420, 234);
             this.groupBox1.TabIndex = 1;
@@ -198,7 +198,7 @@
             // 
             // customerName
             // 
-            this.customerName.Location = new System.Drawing.Point(314, 97);
+            this.customerName.Location = new System.Drawing.Point(272, 97);
             this.customerName.Name = "customerName";
             this.customerName.Size = new System.Drawing.Size(299, 20);
             this.customerName.TabIndex = 2;
@@ -224,6 +224,16 @@
             this.homebtn.Size = new System.Drawing.Size(1254, 69);
             this.homebtn.TabIndex = 4;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1172, 23);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Home";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -245,16 +255,6 @@
             this.backbtn.Text = "Back";
             this.backbtn.UseVisualStyleBackColor = true;
             this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(1172, 23);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Home";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // b_add
             // 

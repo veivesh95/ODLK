@@ -92,5 +92,25 @@ namespace OrdersLK
             this.Hide();
 
         }
+
+        private void radio_name_CheckedChanged(object sender, EventArgs e)
+        {
+            searchQuery.Clear();
+        }
+
+        private void radio_contact_CheckedChanged(object sender, EventArgs e)
+        {
+            searchQuery.Clear();
+        }
+
+        private void radio_email_CheckedChanged(object sender, EventArgs e)
+        {
+            searchQuery.Clear();
+        }
+
+        private void radio_address_CheckedChanged(object sender, EventArgs e)
+        {
+            searchQuery.Clear();
+        }
     }
 }
