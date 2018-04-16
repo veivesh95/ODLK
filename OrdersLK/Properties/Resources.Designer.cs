@@ -63,6 +63,26 @@ namespace OrdersLK.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap aaaaaaaaaaaa {
+            get {
+                object obj = ResourceManager.GetObject("aaaaaaaaaaaa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aaaaaaaaaback {
+            get {
+                object obj = ResourceManager.GetObject("aaaaaaaaaback", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap accounts_consultancy_service_250x250 {
             get {
                 object obj = ResourceManager.GetObject("accounts-consultancy-service-250x250", resourceCulture);

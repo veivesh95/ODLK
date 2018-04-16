@@ -187,5 +187,19 @@ namespace OrdersLK
 
             this.Hide();
         }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+            InventoryANDSupplierHome a = new InventoryANDSupplierHome();
+            a.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Home home = new Home();
+            home.Show();
+            this.Hide();
+        }
     }
 }

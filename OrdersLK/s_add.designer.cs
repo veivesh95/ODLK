@@ -31,13 +31,13 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnAddNewCustomer = new System.Windows.Forms.Button();
             this.comboCustomerName = new System.Windows.Forms.ComboBox();
+            this.comboAgent = new System.Windows.Forms.ComboBox();
             this.txtInvoiceNo = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboAgent = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.comboItems = new System.Windows.Forms.ComboBox();
             this.txtAvailable = new System.Windows.Forms.TextBox();
@@ -116,12 +116,31 @@
             this.comboCustomerName.TabIndex = 21;
             this.comboCustomerName.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
+            // comboAgent
+            // 
+            this.comboAgent.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboAgent.FormattingEnabled = true;
+            this.comboAgent.Location = new System.Drawing.Point(80, 53);
+            this.comboAgent.Name = "comboAgent";
+            this.comboAgent.Size = new System.Drawing.Size(132, 21);
+            this.comboAgent.TabIndex = 20;
+            this.comboAgent.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // txtInvoiceNo
             // 
             this.txtInvoiceNo.Location = new System.Drawing.Point(1005, 49);
             this.txtInvoiceNo.Name = "txtInvoiceNo";
             this.txtInvoiceNo.Size = new System.Drawing.Size(132, 20);
             this.txtInvoiceNo.TabIndex = 12;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(33, 56);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(41, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Agent :";
             // 
             // lblDate
             // 
@@ -158,25 +177,6 @@
             this.label1.Size = new System.Drawing.Size(68, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Invoice No. :";
-            // 
-            // comboAgent
-            // 
-            this.comboAgent.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboAgent.FormattingEnabled = true;
-            this.comboAgent.Location = new System.Drawing.Point(80, 53);
-            this.comboAgent.Name = "comboAgent";
-            this.comboAgent.Size = new System.Drawing.Size(132, 21);
-            this.comboAgent.TabIndex = 20;
-            this.comboAgent.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 56);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Agent :";
             // 
             // groupBox1
             // 
@@ -324,12 +324,14 @@
             // 
             // btnConfirmOrder
             // 
+            this.btnConfirmOrder.BackColor = System.Drawing.Color.Lime;
+            this.btnConfirmOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirmOrder.Location = new System.Drawing.Point(39, 162);
             this.btnConfirmOrder.Name = "btnConfirmOrder";
             this.btnConfirmOrder.Size = new System.Drawing.Size(221, 64);
             this.btnConfirmOrder.TabIndex = 28;
             this.btnConfirmOrder.Text = "Confirm Order";
-            this.btnConfirmOrder.UseVisualStyleBackColor = true;
+            this.btnConfirmOrder.UseVisualStyleBackColor = false;
             this.btnConfirmOrder.Click += new System.EventHandler(this.button3_Click);
             // 
             // panel1
@@ -390,22 +392,26 @@
             // 
             // btnRemoveCart
             // 
+            this.btnRemoveCart.BackColor = System.Drawing.Color.Red;
+            this.btnRemoveCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemoveCart.Location = new System.Drawing.Point(6, 280);
             this.btnRemoveCart.Name = "btnRemoveCart";
             this.btnRemoveCart.Size = new System.Drawing.Size(119, 30);
             this.btnRemoveCart.TabIndex = 34;
             this.btnRemoveCart.Text = "Remove from cart";
-            this.btnRemoveCart.UseVisualStyleBackColor = true;
+            this.btnRemoveCart.UseVisualStyleBackColor = false;
             this.btnRemoveCart.Click += new System.EventHandler(this.button4_Click);
             // 
             // btnAddCart
             // 
+            this.btnAddCart.BackColor = System.Drawing.Color.Lime;
+            this.btnAddCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddCart.Location = new System.Drawing.Point(181, 280);
             this.btnAddCart.Name = "btnAddCart";
             this.btnAddCart.Size = new System.Drawing.Size(119, 30);
             this.btnAddCart.TabIndex = 33;
             this.btnAddCart.Text = "Add to Cart";
-            this.btnAddCart.UseVisualStyleBackColor = true;
+            this.btnAddCart.UseVisualStyleBackColor = false;
             this.btnAddCart.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel2

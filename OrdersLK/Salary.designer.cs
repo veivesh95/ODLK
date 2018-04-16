@@ -68,9 +68,9 @@
             this.daysworked = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.backbtn = new System.Windows.Forms.Button();
+            this.label17 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -229,22 +229,26 @@
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.Cyan;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(141, 170);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(167, 31);
             this.button2.TabIndex = 27;
             this.button2.Text = "Process Employee Detais";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(617, 495);
+            this.button4.BackColor = System.Drawing.Color.Lime;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(900, 495);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(118, 40);
             this.button4.TabIndex = 29;
             this.button4.Text = "Add Salary";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label4
@@ -320,12 +324,14 @@
             // 
             // button5
             // 
+            this.button5.BackColor = System.Drawing.Color.Cyan;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(205, 321);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(164, 34);
             this.button5.TabIndex = 35;
             this.button5.Text = "Process Payment Details";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // salstatus
@@ -390,12 +396,14 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Cyan;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(141, 175);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(167, 32);
             this.button1.TabIndex = 33;
             this.button1.Text = "Process Attendance Details";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label13
@@ -438,6 +446,28 @@
             this.panel1.Size = new System.Drawing.Size(1254, 69);
             this.panel1.TabIndex = 36;
             // 
+            // button3
+            // 
+            this.button3.BackgroundImage = global::OrdersLK.Properties.Resources.aaaaaaaaaaaa;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Location = new System.Drawing.Point(1184, 11);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(57, 48);
+            this.button3.TabIndex = 6;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // backbtn
+            // 
+            this.backbtn.BackgroundImage = global::OrdersLK.Properties.Resources.aaaaaaaaaback;
+            this.backbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.backbtn.Location = new System.Drawing.Point(1120, 11);
+            this.backbtn.Name = "backbtn";
+            this.backbtn.Size = new System.Drawing.Size(57, 48);
+            this.backbtn.TabIndex = 5;
+            this.backbtn.UseVisualStyleBackColor = true;
+            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
+            // 
             // label17
             // 
             this.label17.AutoSize = true;
@@ -449,26 +479,6 @@
             this.label17.TabIndex = 3;
             this.label17.Tag = "                    ";
             this.label17.Text = "           ";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(1169, 22);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Home";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // backbtn
-            // 
-            this.backbtn.Location = new System.Drawing.Point(1088, 22);
-            this.backbtn.Name = "backbtn";
-            this.backbtn.Size = new System.Drawing.Size(75, 23);
-            this.backbtn.TabIndex = 5;
-            this.backbtn.Text = "Back";
-            this.backbtn.UseVisualStyleBackColor = true;
-            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
             // 
             // Salary
             // 

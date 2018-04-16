@@ -104,12 +104,14 @@
             // 
             // addbtn
             // 
+            this.addbtn.BackColor = System.Drawing.Color.Lime;
+            this.addbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addbtn.Location = new System.Drawing.Point(142, 367);
             this.addbtn.Name = "addbtn";
             this.addbtn.Size = new System.Drawing.Size(105, 23);
             this.addbtn.TabIndex = 6;
             this.addbtn.Text = "Add";
-            this.addbtn.UseVisualStyleBackColor = true;
+            this.addbtn.UseVisualStyleBackColor = false;
             this.addbtn.Click += new System.EventHandler(this.addbtn_Click);
             // 
             // PettyCashGridView
@@ -152,32 +154,38 @@
             // 
             // updtbtn
             // 
+            this.updtbtn.BackColor = System.Drawing.Color.Lime;
+            this.updtbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updtbtn.Location = new System.Drawing.Point(142, 367);
             this.updtbtn.Name = "updtbtn";
             this.updtbtn.Size = new System.Drawing.Size(105, 23);
             this.updtbtn.TabIndex = 10;
             this.updtbtn.Text = "Update";
-            this.updtbtn.UseVisualStyleBackColor = true;
+            this.updtbtn.UseVisualStyleBackColor = false;
             this.updtbtn.Click += new System.EventHandler(this.updtbtn_Click);
             // 
             // delbtn
             // 
+            this.delbtn.BackColor = System.Drawing.Color.Red;
+            this.delbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.delbtn.Location = new System.Drawing.Point(276, 367);
             this.delbtn.Name = "delbtn";
             this.delbtn.Size = new System.Drawing.Size(105, 23);
             this.delbtn.TabIndex = 11;
             this.delbtn.Text = "Delete";
-            this.delbtn.UseVisualStyleBackColor = true;
+            this.delbtn.UseVisualStyleBackColor = false;
             this.delbtn.Click += new System.EventHandler(this.delbtn_Click);
             // 
             // cancelbtn
             // 
+            this.cancelbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.cancelbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cancelbtn.Location = new System.Drawing.Point(180, 409);
             this.cancelbtn.Name = "cancelbtn";
             this.cancelbtn.Size = new System.Drawing.Size(156, 23);
             this.cancelbtn.TabIndex = 12;
             this.cancelbtn.Text = "Cancel Editing";
-            this.cancelbtn.UseVisualStyleBackColor = true;
+            this.cancelbtn.UseVisualStyleBackColor = false;
             this.cancelbtn.Click += new System.EventHandler(this.cancelbtn_Click);
             // 
             // pettcashidlabel
@@ -202,21 +210,23 @@
             // 
             // homebtn
             // 
-            this.homebtn.Location = new System.Drawing.Point(1169, 22);
+            this.homebtn.BackgroundImage = global::OrdersLK.Properties.Resources.aaaaaaaaaaaa;
+            this.homebtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.homebtn.Location = new System.Drawing.Point(1184, 12);
             this.homebtn.Name = "homebtn";
-            this.homebtn.Size = new System.Drawing.Size(75, 23);
+            this.homebtn.Size = new System.Drawing.Size(57, 48);
             this.homebtn.TabIndex = 15;
-            this.homebtn.Text = "Home";
             this.homebtn.UseVisualStyleBackColor = true;
             this.homebtn.Click += new System.EventHandler(this.homebtn_Click_1);
             // 
             // backbtn
             // 
-            this.backbtn.Location = new System.Drawing.Point(1088, 22);
+            this.backbtn.BackgroundImage = global::OrdersLK.Properties.Resources.aaaaaaaaaback;
+            this.backbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.backbtn.Location = new System.Drawing.Point(1121, 13);
             this.backbtn.Name = "backbtn";
-            this.backbtn.Size = new System.Drawing.Size(75, 23);
+            this.backbtn.Size = new System.Drawing.Size(57, 48);
             this.backbtn.TabIndex = 16;
-            this.backbtn.Text = "Back";
             this.backbtn.UseVisualStyleBackColor = true;
             this.backbtn.Click += new System.EventHandler(this.backbtn_Click_1);
             // 
@@ -284,12 +294,14 @@
             // 
             // filterbtn
             // 
+            this.filterbtn.BackColor = System.Drawing.Color.Cyan;
+            this.filterbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.filterbtn.Location = new System.Drawing.Point(900, 107);
             this.filterbtn.Name = "filterbtn";
             this.filterbtn.Size = new System.Drawing.Size(87, 23);
             this.filterbtn.TabIndex = 23;
             this.filterbtn.Text = "Filter";
-            this.filterbtn.UseVisualStyleBackColor = true;
+            this.filterbtn.UseVisualStyleBackColor = false;
             this.filterbtn.Click += new System.EventHandler(this.filterbtn_Click);
             // 
             // panel1
@@ -336,12 +348,12 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.catergorycombobox);
             this.Controls.Add(this.PettyCashGridView);
-            this.Controls.Add(this.addbtn);
             this.Controls.Add(this.amountbox);
             this.Controls.Add(this.descbox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.updtbtn);
+            this.Controls.Add(this.addbtn);
             this.Name = "PettyCashPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PettyCashPage";

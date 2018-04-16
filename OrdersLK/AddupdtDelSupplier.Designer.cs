@@ -38,14 +38,14 @@
             this.contactbox = new System.Windows.Forms.TextBox();
             this.addressbox = new System.Windows.Forms.TextBox();
             this.addbtn = new System.Windows.Forms.Button();
-            this.homebtn = new System.Windows.Forms.Button();
             this.updtbtn = new System.Windows.Forms.Button();
             this.cancelbtn = new System.Windows.Forms.Button();
             this.delbtn = new System.Windows.Forms.Button();
-            this.bckbtn = new System.Windows.Forms.Button();
             this.addsupplierforinventrybtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.back = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.supplierdgv)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -136,84 +136,69 @@
             // 
             // addbtn
             // 
-            this.addbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addbtn.BackColor = System.Drawing.Color.Lime;
+            this.addbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addbtn.Location = new System.Drawing.Point(123, 288);
             this.addbtn.Name = "addbtn";
-            this.addbtn.Size = new System.Drawing.Size(118, 23);
+            this.addbtn.Size = new System.Drawing.Size(118, 34);
             this.addbtn.TabIndex = 12;
             this.addbtn.Text = "Add Supplier";
-            this.addbtn.UseVisualStyleBackColor = true;
+            this.addbtn.UseVisualStyleBackColor = false;
             this.addbtn.Click += new System.EventHandler(this.addbtn_Click);
-            // 
-            // homebtn
-            // 
-            this.homebtn.Location = new System.Drawing.Point(1167, 23);
-            this.homebtn.Name = "homebtn";
-            this.homebtn.Size = new System.Drawing.Size(75, 23);
-            this.homebtn.TabIndex = 13;
-            this.homebtn.Text = "Home";
-            this.homebtn.UseVisualStyleBackColor = true;
-            this.homebtn.Click += new System.EventHandler(this.homebtn_Click);
             // 
             // updtbtn
             // 
-            this.updtbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updtbtn.BackColor = System.Drawing.Color.Lime;
+            this.updtbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updtbtn.Location = new System.Drawing.Point(123, 288);
             this.updtbtn.Name = "updtbtn";
-            this.updtbtn.Size = new System.Drawing.Size(118, 23);
+            this.updtbtn.Size = new System.Drawing.Size(118, 34);
             this.updtbtn.TabIndex = 14;
             this.updtbtn.Text = "Update";
-            this.updtbtn.UseVisualStyleBackColor = true;
+            this.updtbtn.UseVisualStyleBackColor = false;
             this.updtbtn.Click += new System.EventHandler(this.updtbtn_Click);
             // 
             // cancelbtn
             // 
-            this.cancelbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancelbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.cancelbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cancelbtn.Location = new System.Drawing.Point(155, 343);
             this.cancelbtn.Name = "cancelbtn";
-            this.cancelbtn.Size = new System.Drawing.Size(156, 26);
+            this.cancelbtn.Size = new System.Drawing.Size(156, 29);
             this.cancelbtn.TabIndex = 15;
             this.cancelbtn.Text = "Cancel Editing";
-            this.cancelbtn.UseVisualStyleBackColor = true;
+            this.cancelbtn.UseVisualStyleBackColor = false;
             this.cancelbtn.Click += new System.EventHandler(this.cancelbtn_Click);
             // 
             // delbtn
             // 
-            this.delbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delbtn.BackColor = System.Drawing.Color.Red;
+            this.delbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.delbtn.Location = new System.Drawing.Point(249, 288);
             this.delbtn.Name = "delbtn";
-            this.delbtn.Size = new System.Drawing.Size(118, 23);
+            this.delbtn.Size = new System.Drawing.Size(118, 34);
             this.delbtn.TabIndex = 16;
             this.delbtn.Text = "Delete";
-            this.delbtn.UseVisualStyleBackColor = true;
+            this.delbtn.UseVisualStyleBackColor = false;
             this.delbtn.Click += new System.EventHandler(this.delbtn_Click);
-            // 
-            // bckbtn
-            // 
-            this.bckbtn.Location = new System.Drawing.Point(1086, 23);
-            this.bckbtn.Name = "bckbtn";
-            this.bckbtn.Size = new System.Drawing.Size(75, 23);
-            this.bckbtn.TabIndex = 17;
-            this.bckbtn.Text = "Back";
-            this.bckbtn.UseVisualStyleBackColor = true;
-            this.bckbtn.Click += new System.EventHandler(this.bckbtn_Click);
             // 
             // addsupplierforinventrybtn
             // 
-            this.addsupplierforinventrybtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addsupplierforinventrybtn.BackColor = System.Drawing.Color.Lime;
+            this.addsupplierforinventrybtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addsupplierforinventrybtn.Location = new System.Drawing.Point(123, 288);
             this.addsupplierforinventrybtn.Name = "addsupplierforinventrybtn";
-            this.addsupplierforinventrybtn.Size = new System.Drawing.Size(118, 23);
+            this.addsupplierforinventrybtn.Size = new System.Drawing.Size(118, 34);
             this.addsupplierforinventrybtn.TabIndex = 18;
             this.addsupplierforinventrybtn.Text = "Add Suplier";
-            this.addsupplierforinventrybtn.UseVisualStyleBackColor = true;
+            this.addsupplierforinventrybtn.UseVisualStyleBackColor = false;
             this.addsupplierforinventrybtn.Click += new System.EventHandler(this.addsupplierforinventrybtn_Click);
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.back);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.homebtn);
-            this.panel1.Controls.Add(this.bckbtn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -232,6 +217,29 @@
             this.label2.Tag = "                    ";
             this.label2.Text = "           ";
             // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::OrdersLK.Properties.Resources.aaaaaaaaaaaa;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(1189, 9);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(57, 48);
+            this.button1.TabIndex = 28;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // back
+            // 
+            this.back.BackColor = System.Drawing.SystemColors.Control;
+            this.back.BackgroundImage = global::OrdersLK.Properties.Resources.aaaaaaaaaback;
+            this.back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.back.Location = new System.Drawing.Point(1127, 9);
+            this.back.Name = "back";
+            this.back.Size = new System.Drawing.Size(57, 48);
+            this.back.TabIndex = 27;
+            this.back.UseVisualStyleBackColor = false;
+            this.back.Click += new System.EventHandler(this.back_Click);
+            // 
             // AddupdtDelSupplier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -241,7 +249,6 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.delbtn);
             this.Controls.Add(this.cancelbtn);
-            this.Controls.Add(this.addbtn);
             this.Controls.Add(this.addressbox);
             this.Controls.Add(this.contactbox);
             this.Controls.Add(this.namebox);
@@ -251,6 +258,7 @@
             this.Controls.Add(this.SupIdLabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.supplierdgv);
+            this.Controls.Add(this.addbtn);
             this.Controls.Add(this.addsupplierforinventrybtn);
             this.Controls.Add(this.updtbtn);
             this.Name = "AddupdtDelSupplier";
@@ -277,13 +285,13 @@
         private System.Windows.Forms.TextBox contactbox;
         private System.Windows.Forms.TextBox addressbox;
         private System.Windows.Forms.Button addbtn;
-        private System.Windows.Forms.Button homebtn;
         private System.Windows.Forms.Button updtbtn;
         private System.Windows.Forms.Button cancelbtn;
         private System.Windows.Forms.Button delbtn;
-        private System.Windows.Forms.Button bckbtn;
         private System.Windows.Forms.Button addsupplierforinventrybtn;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button back;
     }
 }

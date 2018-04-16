@@ -62,11 +62,12 @@
             // 
             // backbtn
             // 
-            this.backbtn.Location = new System.Drawing.Point(1167, 22);
+            this.backbtn.BackgroundImage = global::OrdersLK.Properties.Resources.aaaaaaaaaback;
+            this.backbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.backbtn.Location = new System.Drawing.Point(1183, 12);
             this.backbtn.Name = "backbtn";
-            this.backbtn.Size = new System.Drawing.Size(75, 23);
+            this.backbtn.Size = new System.Drawing.Size(57, 48);
             this.backbtn.TabIndex = 1;
-            this.backbtn.Text = "Back";
             this.backbtn.UseVisualStyleBackColor = true;
             this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
             // 

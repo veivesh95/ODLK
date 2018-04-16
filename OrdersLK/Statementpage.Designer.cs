@@ -47,33 +47,36 @@
             // 
             // backbtn
             // 
-            this.backbtn.Location = new System.Drawing.Point(1086, 22);
+            this.backbtn.BackgroundImage = global::OrdersLK.Properties.Resources.aaaaaaaaaback;
+            this.backbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.backbtn.Location = new System.Drawing.Point(1122, 12);
             this.backbtn.Name = "backbtn";
-            this.backbtn.Size = new System.Drawing.Size(75, 23);
+            this.backbtn.Size = new System.Drawing.Size(57, 48);
             this.backbtn.TabIndex = 1;
-            this.backbtn.Text = "Back";
             this.backbtn.UseVisualStyleBackColor = true;
             this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
             // 
             // homebtn
             // 
-            this.homebtn.Location = new System.Drawing.Point(1167, 22);
+            this.homebtn.BackgroundImage = global::OrdersLK.Properties.Resources.aaaaaaaaaaaa;
+            this.homebtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.homebtn.Location = new System.Drawing.Point(1185, 12);
             this.homebtn.Name = "homebtn";
-            this.homebtn.Size = new System.Drawing.Size(75, 23);
+            this.homebtn.Size = new System.Drawing.Size(57, 48);
             this.homebtn.TabIndex = 0;
-            this.homebtn.Text = "Home";
             this.homebtn.UseVisualStyleBackColor = true;
             this.homebtn.Click += new System.EventHandler(this.homebtn_Click);
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.BackColor = System.Drawing.Color.Cyan;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(64, 167);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(200, 40);
             this.button1.TabIndex = 14;
             this.button1.Text = "Income Statement";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
@@ -98,12 +101,14 @@
             // 
             // pdfbtn
             // 
+            this.pdfbtn.BackColor = System.Drawing.Color.Cyan;
+            this.pdfbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pdfbtn.Location = new System.Drawing.Point(64, 359);
             this.pdfbtn.Name = "pdfbtn";
             this.pdfbtn.Size = new System.Drawing.Size(200, 41);
             this.pdfbtn.TabIndex = 18;
             this.pdfbtn.Text = "Export PDF";
-            this.pdfbtn.UseVisualStyleBackColor = true;
+            this.pdfbtn.UseVisualStyleBackColor = false;
             this.pdfbtn.Click += new System.EventHandler(this.pdfbtn_Click);
             // 
             // paymentsdgv
@@ -150,12 +155,14 @@
             // 
             // searchbtn
             // 
+            this.searchbtn.BackColor = System.Drawing.Color.Cyan;
+            this.searchbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchbtn.Location = new System.Drawing.Point(878, 103);
             this.searchbtn.Name = "searchbtn";
             this.searchbtn.Size = new System.Drawing.Size(111, 23);
             this.searchbtn.TabIndex = 23;
             this.searchbtn.Text = "Search";
-            this.searchbtn.UseVisualStyleBackColor = true;
+            this.searchbtn.UseVisualStyleBackColor = false;
             this.searchbtn.Click += new System.EventHandler(this.searchbtn_Click);
             // 
             // panel1

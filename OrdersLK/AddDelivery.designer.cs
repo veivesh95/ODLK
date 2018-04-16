@@ -47,10 +47,10 @@
             this.ordidlabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.DManCombo = new System.Windows.Forms.ComboBox();
-            this.back = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.homebtn = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.back = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ViewOrdersDataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -131,12 +131,14 @@
             // 
             // addbtn
             // 
+            this.addbtn.BackColor = System.Drawing.Color.Lime;
+            this.addbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addbtn.Location = new System.Drawing.Point(1134, 511);
             this.addbtn.Name = "addbtn";
             this.addbtn.Size = new System.Drawing.Size(100, 23);
             this.addbtn.TabIndex = 3;
             this.addbtn.Text = "Add Delivery";
-            this.addbtn.UseVisualStyleBackColor = true;
+            this.addbtn.UseVisualStyleBackColor = false;
             this.addbtn.Click += new System.EventHandler(this.addbtn_Click);
             // 
             // label7
@@ -262,17 +264,6 @@
             this.DManCombo.TabIndex = 19;
             this.DManCombo.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // back
-            // 
-            this.back.BackColor = System.Drawing.SystemColors.Control;
-            this.back.Location = new System.Drawing.Point(1080, 23);
-            this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(75, 23);
-            this.back.TabIndex = 20;
-            this.back.Text = "Back";
-            this.back.UseVisualStyleBackColor = false;
-            this.back.Click += new System.EventHandler(this.back_Click);
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.homebtn);
@@ -284,6 +275,17 @@
             this.panel1.Size = new System.Drawing.Size(1254, 69);
             this.panel1.TabIndex = 20;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // homebtn
+            // 
+            this.homebtn.BackgroundImage = global::OrdersLK.Properties.Resources.aaaaaaaaaaaa;
+            this.homebtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.homebtn.Location = new System.Drawing.Point(1182, 12);
+            this.homebtn.Name = "homebtn";
+            this.homebtn.Size = new System.Drawing.Size(57, 48);
+            this.homebtn.TabIndex = 22;
+            this.homebtn.UseVisualStyleBackColor = true;
+            this.homebtn.Click += new System.EventHandler(this.homebtn_Click);
             // 
             // label3
             // 
@@ -297,15 +299,17 @@
             this.label3.Tag = "                    ";
             this.label3.Text = "           ";
             // 
-            // homebtn
+            // back
             // 
-            this.homebtn.Location = new System.Drawing.Point(1167, 23);
-            this.homebtn.Name = "homebtn";
-            this.homebtn.Size = new System.Drawing.Size(75, 23);
-            this.homebtn.TabIndex = 22;
-            this.homebtn.Text = "Home";
-            this.homebtn.UseVisualStyleBackColor = true;
-            this.homebtn.Click += new System.EventHandler(this.homebtn_Click);
+            this.back.BackColor = System.Drawing.SystemColors.Control;
+            this.back.BackgroundImage = global::OrdersLK.Properties.Resources.aaaaaaaaaback;
+            this.back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.back.Location = new System.Drawing.Point(1120, 12);
+            this.back.Name = "back";
+            this.back.Size = new System.Drawing.Size(57, 48);
+            this.back.TabIndex = 20;
+            this.back.UseVisualStyleBackColor = false;
+            this.back.Click += new System.EventHandler(this.back_Click);
             // 
             // AddDelivery
             // 
