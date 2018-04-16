@@ -42,7 +42,7 @@ namespace OrdersLK
             lblDate.Text = this.tempDate.ToShortDateString();
             Functions.LoadComboBoxes("SELECT * FROM Product", comboItems, "ProductName");
             Functions.LoadComboBoxes("SELECT * FROM Customer", comboCustomerName, "CustomerName");
-            Functions.LoadComboBoxes("SELECT * FROM Employee", comboAgent, "FirstName");
+            Functions.LoadComboBoxes("SELECT * FROM Employee", comboAgent, "EmpName");
             txtInvoiceNo.Text = this.tempOrderId = Functions.getNextID("OrderId", "Orders", "ORD");
             lblQuantityTotal.Text = "Rs. 0.00";
         }
@@ -52,7 +52,7 @@ namespace OrdersLK
             string choice3 = null;
             choice3 = comboAgent.Text;
 
-            this.tempAgent = Functions.getValue("Employee", "FirstName", choice3, "EmpId");
+            this.tempAgent = Functions.getValue("Employee", "EmpName", choice3, "EmpId");
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -64,24 +64,26 @@ namespace OrdersLK
 
                 tempBuyerId = Functions.getValue("Customer", "CustomerName", choice2, "CustomerId");
                 this.tempMail = Functions.getValue("Customer", "CustomerName", choice2, "Email");
-
             }
 
         }
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            txtQuantity.ResetText();
+            if (comboCustomerName.SelectedIndex != -1)
+            {
+                txtQuantity.ResetText();
 
-            string choice = null;
-            choice = comboItems.Text;
-            this.tempItem = choice;
+                string choice = null;
+                choice = comboItems.Text;
+                this.tempItem = choice;
 
-            txtMRP.Text = this.tempUnitPrice = Functions.getValue("Product", "ProductName", choice, "SellingPrice");
-            this.tempCost = Functions.getValue("Product", "ProductName", choice, "UnitPrice");
-            txtAvailable.Text = this.tempAvailable = Functions.getValue("Product", "ProductName", choice, "QuantityAvailable");
-            this.tempAvailableInt = Int32.Parse(this.tempAvailable);
-            this.tempPID = Functions.getValue("Product", "ProductName", choice, "ProductId");
+                txtMRP.Text = this.tempUnitPrice = Functions.getValue("Product", "ProductName", choice, "SellingPrice");
+                this.tempCost = Functions.getValue("Product", "ProductName", choice, "UnitPrice");
+                txtAvailable.Text = this.tempAvailable = Functions.getValue("Product", "ProductName", choice, "QuantityAvailable");
+                this.tempAvailableInt = Int32.Parse(this.tempAvailable);
+                this.tempPID = Functions.getValue("Product", "ProductName", choice, "ProductId");
+            }
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
@@ -189,6 +191,7 @@ namespace OrdersLK
                                     {
                                         MessageBox.Show("Mail has been sent to Customer");
                                     }
+                                    newOrder();
                                 }
                                 catch (Exception ex)
                                 {
@@ -205,6 +208,11 @@ namespace OrdersLK
                                     b_update_single bu = new b_update_single();
                                     bu.ShowDialog();
                                     Console.WriteLine("Email added");
+                                    newOrder();
+                                }
+                                if (dialogResultEmail == DialogResult.No)
+                                {
+                                    newOrder();
                                 }
                             }
                         }
@@ -231,13 +239,18 @@ namespace OrdersLK
 
         private void button4_Click(object sender, EventArgs e)
         {
-            foreach (DataGridViewRow row in cartTable.SelectedRows)
+            DialogResult dialogResult = MessageBox.Show("Do you wish to cancel this item from cart?", "Removing item from cart", MessageBoxButtons.YesNo);
+
+            if (dialogResult == DialogResult.Yes)
             {
-                if (!row.IsNewRow)
+                foreach (DataGridViewRow row in cartTable.SelectedRows)
                 {
-                    this.count = this.count - Double.Parse(row.Cells[4].Value.ToString());
-                    cartTable.Rows.Remove(row);
-                    txtGrandTotal.Text = string.Concat(this.count.ToString(), ".00");
+                    if (!row.IsNewRow)
+                    {
+                        this.count = this.count - Double.Parse(row.Cells[4].Value.ToString());
+                        cartTable.Rows.Remove(row);
+                        txtGrandTotal.Text = string.Concat(this.count.ToString(), ".00");
+                    }
                 }
             }
         }
@@ -266,6 +279,8 @@ namespace OrdersLK
                 this.count = this.count + this.tempTotal;
                 this.unitCount = this.unitCount + this.tempCostTotal;
                 txtGrandTotal.Text = string.Concat(this.count.ToString(), ".00");
+                ClearAfterAdd();
+
             }
         }
 
@@ -332,9 +347,42 @@ namespace OrdersLK
             btnConfirmOrder.Enabled = false;
         }
 
+        private void newOrder()
+        {
+            comboCustomerName.Enabled = true;
+            btnAddNewCustomer.Enabled = true;
+            txtInvoiceNo.Enabled = true;
+            comboItems.Enabled = true;
+            txtQuantity.Enabled = true;
+            comboAgent.Enabled = true;
+            btnRemoveCart.Enabled = true;
+            btnAddCart.Enabled = true;
+            btnConfirmOrder.Enabled = true;
+
+            comboCustomerName.SelectedIndex = -1;
+            comboItems.SelectedIndex = -1;
+            cartTable.Rows.Clear();
+            txtInvoiceNo.Text = this.tempOrderId = Functions.getNextID("OrderId", "Orders", "ORD");
+            this.tempDate = DateTime.Now;
+            lblQuantityTotal.Text = "Rs. 0.00";
+            lblDate.Text = this.tempDate.ToShortDateString();
+            txtMRP.Text = "";
+            txtAvailable.Text = "";
+            txtQuantity.Text = "";
+            lblQuantityTotal.Text = "";
+            txtGrandTotal.Clear();
+            this.count = 0;
+            this.unitCount = 0;
+        }
+
         public string buyerObj
         {
             get { return tempBuyerId; }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

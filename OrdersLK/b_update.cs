@@ -61,30 +61,49 @@ namespace OrdersLK
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-
-            if ((txtCusName.Text != "" || !string.IsNullOrEmpty(txtCusName.Text) || !string.IsNullOrWhiteSpace(txtCusName.Text))
-            && (!string.IsNullOrEmpty(txtAddress.Text) || !string.IsNullOrWhiteSpace(txtAddress.Text))
-            && (!string.IsNullOrEmpty(txtContact.Text) || !string.IsNullOrWhiteSpace(txtContact.Text))
-            && (!string.IsNullOrEmpty(txtAddress.Text) || !string.IsNullOrWhiteSpace(txtAddress.Text))
-
-            && Functions.isText(txtCusName.Text)
-            && Functions.isValid(txtMail.Text)
-            && Functions.isContact(txtContact.Text))
+            if ((this.txtCusName.Text != "" && Functions.isName(this.txtCusName.Text)) && (this.txtAddress.Text != "." && this.txtAddress.Text != null) && ((this.txtContact.Text != "") && (Functions.isContact(this.txtContact.Text))))
             {
-                string query_ = "UPDATE Customer SET CustomerName = '" + txtCusName.Text
+                if (this.txtMail.Text != "")
+                {
+                    if (Functions.EmailIsValid(this.txtMail.Text))
+                    {
+                        string query_ = "UPDATE Customer SET CustomerName = '" + txtCusName.Text
                                     + "', Address = '" + txtAddress.Text
                                     + "', Contact = '" + txtContact.Text
                                     + "', Email = '" + txtMail.Text
                                     + "' WHERE CustomerId = '" + this.bId + "'";
-                Functions.ExecuteQuery(query_);
+                        Functions.ExecuteQuery(query_);
 
-                this.listBox1.Items.Clear();
-                fillList();
+                        this.listBox1.Items.Clear();
+                        fillList();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Please recheck your Email address");
+                    }
+                }
+                else if (this.txtMail.Text == "" || this.txtMail.Text == null)
+                {
+                    try
+                    {
+                        string query_ = "UPDATE Customer SET CustomerName = '" + txtCusName.Text
+                                    + "', Address = '" + txtAddress.Text
+                                    + "', Contact = '" + txtContact.Text
+                                    + "' WHERE CustomerId = '" + this.bId + "'";
+                        Functions.ExecuteQuery(query_);
+
+                        this.listBox1.Items.Clear();
+                        fillList();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Some Error");
+                    }
+                }
             }
-
             else
             {
-                MessageBox.Show("Invalid information given. Check the entries again.");
+                MessageBox.Show("Please recheck your entry!");
             }
         }
 

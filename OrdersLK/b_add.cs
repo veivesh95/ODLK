@@ -18,6 +18,7 @@ namespace OrdersLK
         private string buyerAddress;
         private string buyerContact;
         private string buyerEmail;
+        private Boolean checker = false;
 
         public b_add()
         {
@@ -52,32 +53,78 @@ namespace OrdersLK
 
             this.buyerAddress = customerAddress1.Text + secondaryAddress + ".";
 
-            if (
-                !string.IsNullOrEmpty(this.buyerId)
-                && (customerName.Text != "" || !string.IsNullOrEmpty(this.buyerName) || !string.IsNullOrWhiteSpace(this.buyerName))
-                && (!string.IsNullOrEmpty(this.buyerAddress) || !string.IsNullOrWhiteSpace(this.buyerAddress))
-                && (!string.IsNullOrEmpty(this.buyerContact) || customerContact.Text == "" || !string.IsNullOrWhiteSpace(this.buyerContact))
-
-                && Functions.isText(this.buyerName)
-                && Functions.isValid(this.buyerEmail)
-                && Functions.isContact(this.buyerContact)
-                )
+            if (this.buyerName != "")
             {
-                string query_ = "INSERT into Customer values ('" + buyerId + "','" + buyerName + "','" + buyerAddress + "','" + buyerContact + "','" + buyerEmail + "')";
-                Functions.ExecuteQuery(query_);
+                if (Functions.isName(this.buyerName))
+                {
+                    this.checker = true;
+                }
+                else
+                    this.checker = false;
+            }
 
-                Functions.ClearAllText(this);
-                this.Close();
+            if (this.buyerAddress != ".")
+            {
+                this.checker = true;
+            }
+            else this.checker = false;
 
-                b_home bh = new b_home();
-                bh.Show();
+            if (this.buyerContact != "")
+            {
+                if (Functions.isContact(this.buyerContact))
+                {
+                    this.checker = true;
+                }
+            }
+            else this.checker = false;
+
+            if ((this.buyerName != "" && Functions.isName(this.buyerName)) && (this.buyerAddress != ".") && ((this.buyerContact != "") && (Functions.isContact(this.buyerContact))))
+            {
+                if (this.buyerEmail != "")
+                {
+                    if (Functions.EmailIsValid(this.buyerEmail))
+                    {
+                        string mailYesQuery = "INSERT into Customer values ('" + buyerId + "','" + buyerName + "','" + buyerAddress + "','" + buyerContact + "','" + buyerEmail + "')";
+                        Functions.ExecuteQuery(mailYesQuery);
+
+                        Functions.ClearAllText(this);
+                        this.Close();
+
+                        b_home bh1 = new b_home();
+                        bh1.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Please recheck your Email address");
+                    }
+                }
+                else if (this.buyerEmail == "" || this.buyerEmail == null)
+                {
+                    try
+                    {
+                        string query_ = "INSERT into Customer (CustomerId, CustomerName, Address, Contact) values ('" + buyerId + "','" + buyerName + "','" + buyerAddress + "','" + buyerContact + "')";
+                        Functions.ExecuteQuery(query_);
+
+                        Functions.ClearAllText(this);
+                        this.Close();
+
+                        b_home bh = new b_home();
+                        bh.Show();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Some Error");
+                    }
+                }
             }
             else
             {
-                MessageBox.Show("Please fill correct information before saving");
+                MessageBox.Show("Please recheck your entry!");
             }
-
         }
+
+
+
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
