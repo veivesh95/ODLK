@@ -47,11 +47,11 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.newcatergortbtn = new System.Windows.Forms.LinkLabel();
             this.updtbtn = new System.Windows.Forms.Button();
-            this.homebtn = new System.Windows.Forms.Button();
-            this.backbtn = new System.Windows.Forms.Button();
             this.cancelbtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.back = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.productdgv)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -180,13 +180,14 @@
             // 
             // addbtn
             // 
-            this.addbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addbtn.BackColor = System.Drawing.Color.Lime;
+            this.addbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addbtn.Location = new System.Drawing.Point(140, 426);
             this.addbtn.Name = "addbtn";
             this.addbtn.Size = new System.Drawing.Size(77, 23);
             this.addbtn.TabIndex = 15;
             this.addbtn.Text = "Add";
-            this.addbtn.UseVisualStyleBackColor = true;
+            this.addbtn.UseVisualStyleBackColor = false;
             this.addbtn.Click += new System.EventHandler(this.addbtn_Click);
             // 
             // label5
@@ -234,51 +235,33 @@
             // 
             // updtbtn
             // 
-            this.updtbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updtbtn.BackColor = System.Drawing.Color.Lime;
+            this.updtbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updtbtn.Location = new System.Drawing.Point(142, 426);
             this.updtbtn.Name = "updtbtn";
             this.updtbtn.Size = new System.Drawing.Size(75, 23);
             this.updtbtn.TabIndex = 20;
             this.updtbtn.Text = "Update";
-            this.updtbtn.UseVisualStyleBackColor = true;
+            this.updtbtn.UseVisualStyleBackColor = false;
             this.updtbtn.Click += new System.EventHandler(this.updtbtn_Click);
-            // 
-            // homebtn
-            // 
-            this.homebtn.Location = new System.Drawing.Point(1167, 21);
-            this.homebtn.Name = "homebtn";
-            this.homebtn.Size = new System.Drawing.Size(75, 23);
-            this.homebtn.TabIndex = 22;
-            this.homebtn.Text = "Home";
-            this.homebtn.UseVisualStyleBackColor = true;
-            this.homebtn.Click += new System.EventHandler(this.homebtn_Click);
-            // 
-            // backbtn
-            // 
-            this.backbtn.Location = new System.Drawing.Point(1086, 21);
-            this.backbtn.Name = "backbtn";
-            this.backbtn.Size = new System.Drawing.Size(75, 23);
-            this.backbtn.TabIndex = 23;
-            this.backbtn.Text = "Back";
-            this.backbtn.UseVisualStyleBackColor = true;
-            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
             // 
             // cancelbtn
             // 
-            this.cancelbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancelbtn.BackColor = System.Drawing.Color.Red;
+            this.cancelbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cancelbtn.Location = new System.Drawing.Point(226, 426);
             this.cancelbtn.Name = "cancelbtn";
             this.cancelbtn.Size = new System.Drawing.Size(75, 23);
             this.cancelbtn.TabIndex = 24;
             this.cancelbtn.Text = "Cancel Editing";
-            this.cancelbtn.UseVisualStyleBackColor = true;
+            this.cancelbtn.UseVisualStyleBackColor = false;
             this.cancelbtn.Click += new System.EventHandler(this.cancelbtn_Click);
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.back);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.homebtn);
-            this.panel1.Controls.Add(this.backbtn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -297,6 +280,29 @@
             this.label8.Tag = "                    ";
             this.label8.Text = "           ";
             // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::OrdersLK.Properties.Resources.aaaaaaaaaaaa;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(1185, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(57, 48);
+            this.button1.TabIndex = 26;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // back
+            // 
+            this.back.BackColor = System.Drawing.SystemColors.Control;
+            this.back.BackgroundImage = global::OrdersLK.Properties.Resources.aaaaaaaaaback;
+            this.back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.back.Location = new System.Drawing.Point(1123, 12);
+            this.back.Name = "back";
+            this.back.Size = new System.Drawing.Size(57, 48);
+            this.back.TabIndex = 25;
+            this.back.UseVisualStyleBackColor = false;
+            this.back.Click += new System.EventHandler(this.back_Click);
+            // 
             // AddInventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -309,7 +315,6 @@
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.supcombobox);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.addbtn);
             this.Controls.Add(this.sellingpricebox);
             this.Controls.Add(this.unitpricebox);
             this.Controls.Add(this.quantitybox);
@@ -323,6 +328,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.productdgv);
             this.Controls.Add(this.catergorycombobox);
+            this.Controls.Add(this.addbtn);
             this.Controls.Add(this.updtbtn);
             this.Name = "AddInventory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -357,10 +363,10 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.LinkLabel newcatergortbtn;
         private System.Windows.Forms.Button updtbtn;
-        private System.Windows.Forms.Button homebtn;
-        private System.Windows.Forms.Button backbtn;
         private System.Windows.Forms.Button cancelbtn;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button back;
     }
 }

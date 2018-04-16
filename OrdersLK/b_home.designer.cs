@@ -41,8 +41,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.homebtn = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.backbtn = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.customerTable)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -140,22 +140,24 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.DarkTurquoise;
             this.button1.Location = new System.Drawing.Point(881, 488);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(349, 44);
             this.button1.TabIndex = 2;
             this.button1.Text = "Add New Buyer";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.DarkTurquoise;
             this.button2.Location = new System.Drawing.Point(881, 417);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(349, 44);
             this.button2.TabIndex = 2;
             this.button2.Text = "Update Existing Information";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel1
@@ -179,13 +181,25 @@
             // 
             // homebtn
             // 
-            this.homebtn.Location = new System.Drawing.Point(1167, 23);
+            this.homebtn.BackgroundImage = global::OrdersLK.Properties.Resources.aaaaaaaaaaaa;
+            this.homebtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.homebtn.Location = new System.Drawing.Point(1181, 8);
             this.homebtn.Name = "homebtn";
-            this.homebtn.Size = new System.Drawing.Size(75, 23);
+            this.homebtn.Size = new System.Drawing.Size(57, 48);
             this.homebtn.TabIndex = 4;
-            this.homebtn.Text = "Home";
             this.homebtn.UseVisualStyleBackColor = true;
             this.homebtn.Click += new System.EventHandler(this.homebtn_Click);
+            // 
+            // backbtn
+            // 
+            this.backbtn.BackgroundImage = global::OrdersLK.Properties.Resources.aaaaaaaaaback;
+            this.backbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.backbtn.Location = new System.Drawing.Point(1113, 8);
+            this.backbtn.Name = "backbtn";
+            this.backbtn.Size = new System.Drawing.Size(57, 48);
+            this.backbtn.TabIndex = 0;
+            this.backbtn.UseVisualStyleBackColor = true;
+            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
             // 
             // label2
             // 
@@ -198,16 +212,6 @@
             this.label2.TabIndex = 3;
             this.label2.Tag = "                    ";
             this.label2.Text = "           ";
-            // 
-            // backbtn
-            // 
-            this.backbtn.Location = new System.Drawing.Point(1078, 23);
-            this.backbtn.Name = "backbtn";
-            this.backbtn.Size = new System.Drawing.Size(75, 23);
-            this.backbtn.TabIndex = 0;
-            this.backbtn.Text = "Back";
-            this.backbtn.UseVisualStyleBackColor = true;
-            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
             // 
             // b_home
             // 

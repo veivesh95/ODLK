@@ -64,8 +64,8 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
             this.backbtn = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -372,12 +372,14 @@
             // 
             // addbtn
             // 
+            this.addbtn.BackColor = System.Drawing.Color.Lime;
+            this.addbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addbtn.Location = new System.Drawing.Point(887, 435);
             this.addbtn.Name = "addbtn";
             this.addbtn.Size = new System.Drawing.Size(154, 31);
             this.addbtn.TabIndex = 2;
             this.addbtn.Text = "Add Employee";
-            this.addbtn.UseVisualStyleBackColor = true;
+            this.addbtn.UseVisualStyleBackColor = false;
             this.addbtn.Click += new System.EventHandler(this.addbtn_Click);
             // 
             // errorProvider1
@@ -397,13 +399,25 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1167, 23);
+            this.button1.BackgroundImage = global::OrdersLK.Properties.Resources.aaaaaaaaaaaa;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(1184, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(57, 48);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Home";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // backbtn
+            // 
+            this.backbtn.BackgroundImage = global::OrdersLK.Properties.Resources.aaaaaaaaaback;
+            this.backbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.backbtn.Location = new System.Drawing.Point(1120, 12);
+            this.backbtn.Name = "backbtn";
+            this.backbtn.Size = new System.Drawing.Size(57, 48);
+            this.backbtn.TabIndex = 0;
+            this.backbtn.UseVisualStyleBackColor = true;
+            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
             // 
             // label11
             // 
@@ -416,16 +430,6 @@
             this.label11.TabIndex = 3;
             this.label11.Tag = "                    ";
             this.label11.Text = "           ";
-            // 
-            // backbtn
-            // 
-            this.backbtn.Location = new System.Drawing.Point(1086, 23);
-            this.backbtn.Name = "backbtn";
-            this.backbtn.Size = new System.Drawing.Size(75, 23);
-            this.backbtn.TabIndex = 0;
-            this.backbtn.Text = "Back";
-            this.backbtn.UseVisualStyleBackColor = true;
-            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
             // 
             // RegisterEmployee
             // 

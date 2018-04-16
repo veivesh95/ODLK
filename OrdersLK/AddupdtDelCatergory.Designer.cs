@@ -88,32 +88,38 @@
             // 
             // addbtn
             // 
+            this.addbtn.BackColor = System.Drawing.Color.Lime;
+            this.addbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addbtn.Location = new System.Drawing.Point(159, 238);
             this.addbtn.Name = "addbtn";
             this.addbtn.Size = new System.Drawing.Size(75, 23);
             this.addbtn.TabIndex = 5;
             this.addbtn.Text = "Add";
-            this.addbtn.UseVisualStyleBackColor = true;
+            this.addbtn.UseVisualStyleBackColor = false;
             this.addbtn.Click += new System.EventHandler(this.addbtn_Click);
             // 
             // updtbtn
             // 
+            this.updtbtn.BackColor = System.Drawing.Color.Lime;
+            this.updtbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updtbtn.Location = new System.Drawing.Point(159, 282);
             this.updtbtn.Name = "updtbtn";
             this.updtbtn.Size = new System.Drawing.Size(75, 23);
             this.updtbtn.TabIndex = 6;
             this.updtbtn.Text = "Update";
-            this.updtbtn.UseVisualStyleBackColor = true;
+            this.updtbtn.UseVisualStyleBackColor = false;
             this.updtbtn.Click += new System.EventHandler(this.updtbtn_Click);
             // 
             // delbtn
             // 
+            this.delbtn.BackColor = System.Drawing.Color.Red;
+            this.delbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.delbtn.Location = new System.Drawing.Point(159, 321);
             this.delbtn.Name = "delbtn";
             this.delbtn.Size = new System.Drawing.Size(75, 23);
             this.delbtn.TabIndex = 7;
             this.delbtn.Text = "Delete";
-            this.delbtn.UseVisualStyleBackColor = true;
+            this.delbtn.UseVisualStyleBackColor = false;
             this.delbtn.Click += new System.EventHandler(this.delbtn_Click);
             // 
             // panel1

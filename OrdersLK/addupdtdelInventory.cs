@@ -218,5 +218,19 @@ namespace OrdersLK
             unitpricebox.Text = ""; ;
             sellingpricebox.Text = "";
         }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+            InventoryANDSupplierHome ias = new InventoryANDSupplierHome();
+            ias.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Home h = new Home();
+            h.Show();
+            this.Hide();
+        }
     }
 }

@@ -35,8 +35,8 @@
             this.cancelDelivery = new System.Windows.Forms.Button();
             this.back = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ViewDeliverydataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -67,41 +67,48 @@
             // 
             // Update
             // 
+            this.Update.BackColor = System.Drawing.Color.Lime;
+            this.Update.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Update.Location = new System.Drawing.Point(157, 486);
             this.Update.Name = "Update";
             this.Update.Size = new System.Drawing.Size(97, 23);
             this.Update.TabIndex = 1;
             this.Update.Text = "Update Payment";
-            this.Update.UseVisualStyleBackColor = true;
+            this.Update.UseVisualStyleBackColor = false;
             this.Update.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.Cyan;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(1026, 486);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(106, 23);
             this.button2.TabIndex = 2;
             this.button2.Text = "Export to Excel";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // cancelDelivery
             // 
+            this.cancelDelivery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.cancelDelivery.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cancelDelivery.Location = new System.Drawing.Point(270, 486);
             this.cancelDelivery.Name = "cancelDelivery";
             this.cancelDelivery.Size = new System.Drawing.Size(114, 23);
             this.cancelDelivery.TabIndex = 3;
             this.cancelDelivery.Text = "Cancel Delivery";
-            this.cancelDelivery.UseVisualStyleBackColor = true;
+            this.cancelDelivery.UseVisualStyleBackColor = false;
             this.cancelDelivery.Click += new System.EventHandler(this.cancelDelivery_Click);
             // 
             // back
             // 
-            this.back.Location = new System.Drawing.Point(1086, 23);
+            this.back.BackgroundImage = global::OrdersLK.Properties.Resources.aaaaaaaaaback;
+            this.back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.back.Location = new System.Drawing.Point(1122, 12);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(75, 23);
+            this.back.Size = new System.Drawing.Size(57, 48);
             this.back.TabIndex = 4;
-            this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = true;
             this.back.Click += new System.EventHandler(this.back_Click);
             // 
@@ -116,6 +123,17 @@
             this.panel1.Size = new System.Drawing.Size(1254, 69);
             this.panel1.TabIndex = 5;
             // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::OrdersLK.Properties.Resources.aaaaaaaaaaaa;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(1185, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(57, 48);
+            this.button1.TabIndex = 6;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -127,16 +145,6 @@
             this.label1.TabIndex = 5;
             this.label1.Tag = "                    ";
             this.label1.Text = "           ";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(1167, 23);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Home";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // ViewConfirmedDeliveryDetails
             // 

@@ -47,8 +47,8 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.homebtn = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
             this.backbtn = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.homebtn.SuspendLayout();
@@ -205,12 +205,14 @@
             // 
             // btnAdd
             // 
+            this.btnAdd.BackColor = System.Drawing.Color.Lime;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Location = new System.Drawing.Point(978, 427);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(92, 39);
             this.btnAdd.TabIndex = 3;
             this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // homebtn
@@ -226,13 +228,25 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1172, 23);
+            this.button1.BackgroundImage = global::OrdersLK.Properties.Resources.aaaaaaaaaaaa;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(1183, 10);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(57, 48);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Home";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // backbtn
+            // 
+            this.backbtn.BackgroundImage = global::OrdersLK.Properties.Resources.aaaaaaaaaback;
+            this.backbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.backbtn.Location = new System.Drawing.Point(1120, 10);
+            this.backbtn.Name = "backbtn";
+            this.backbtn.Size = new System.Drawing.Size(57, 48);
+            this.backbtn.TabIndex = 0;
+            this.backbtn.UseVisualStyleBackColor = true;
+            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
             // 
             // label8
             // 
@@ -245,16 +259,6 @@
             this.label8.TabIndex = 3;
             this.label8.Tag = "                    ";
             this.label8.Text = "           ";
-            // 
-            // backbtn
-            // 
-            this.backbtn.Location = new System.Drawing.Point(1091, 23);
-            this.backbtn.Name = "backbtn";
-            this.backbtn.Size = new System.Drawing.Size(75, 23);
-            this.backbtn.TabIndex = 0;
-            this.backbtn.Text = "Back";
-            this.backbtn.UseVisualStyleBackColor = true;
-            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
             // 
             // b_add
             // 

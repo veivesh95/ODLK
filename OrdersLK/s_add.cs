@@ -42,7 +42,7 @@ namespace OrdersLK
             lblDate.Text = this.tempDate.ToShortDateString();
             Functions.LoadComboBoxes("SELECT * FROM Product", comboItems, "ProductName");
             Functions.LoadComboBoxes("SELECT * FROM Customer", comboCustomerName, "CustomerName");
-            Functions.LoadComboBoxes("SELECT * FROM Employee", comboAgent, "EmpName");
+            Functions.LoadComboBoxes("SELECT * FROM Employee", comboAgent, "FirstName");
             txtInvoiceNo.Text = this.tempOrderId = Functions.getNextID("OrderId", "Orders", "ORD");
             lblQuantityTotal.Text = "Rs. 0.00";
         }
@@ -52,7 +52,7 @@ namespace OrdersLK
             string choice3 = null;
             choice3 = comboAgent.Text;
 
-            this.tempAgent = Functions.getValue("Employee", "EmpName", choice3, "EmpId");
+            this.tempAgent = Functions.getValue("Employee", "FirstName", choice3, "EmpId");
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)

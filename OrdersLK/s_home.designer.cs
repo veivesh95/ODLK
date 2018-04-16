@@ -44,12 +44,12 @@
             this.comboCustomer = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.homebtn = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
             this.backbtn = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.monthPicker = new System.Windows.Forms.DateTimePicker();
             this.btnExport = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.orderPendingTable)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -87,12 +87,14 @@
             // 
             // btnAdd
             // 
+            this.btnAdd.BackColor = System.Drawing.Color.Lime;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Location = new System.Drawing.Point(882, 477);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(349, 44);
             this.btnAdd.TabIndex = 3;
             this.btnAdd.Text = "Add New Order";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // tabControl1
@@ -161,7 +163,12 @@
             // 
             // cmbStatus
             // 
+            this.cmbStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbStatus.FormattingEnabled = true;
+            this.cmbStatus.Items.AddRange(new object[] {
+            "Confirmed",
+            "Processing",
+            "Cancelled"});
             this.cmbStatus.Location = new System.Drawing.Point(161, 139);
             this.cmbStatus.Name = "cmbStatus";
             this.cmbStatus.Size = new System.Drawing.Size(149, 21);
@@ -229,33 +236,23 @@
             // 
             // homebtn
             // 
-            this.homebtn.Location = new System.Drawing.Point(1167, 23);
+            this.homebtn.BackgroundImage = global::OrdersLK.Properties.Resources.aaaaaaaaaaaa;
+            this.homebtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.homebtn.Location = new System.Drawing.Point(1190, 12);
             this.homebtn.Name = "homebtn";
-            this.homebtn.Size = new System.Drawing.Size(75, 23);
+            this.homebtn.Size = new System.Drawing.Size(57, 48);
             this.homebtn.TabIndex = 4;
-            this.homebtn.Text = "Home";
             this.homebtn.UseVisualStyleBackColor = true;
             this.homebtn.Click += new System.EventHandler(this.homebtn_Click);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Image = global::OrdersLK.Properties.Resources.orders;
-            this.label4.Location = new System.Drawing.Point(3, 7);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(146, 57);
-            this.label4.TabIndex = 3;
-            this.label4.Tag = "                    ";
-            this.label4.Text = "           ";
-            // 
             // backbtn
             // 
-            this.backbtn.Location = new System.Drawing.Point(1081, 23);
+            this.backbtn.BackgroundImage = global::OrdersLK.Properties.Resources.aaaaaaaaaback;
+            this.backbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.backbtn.Location = new System.Drawing.Point(1128, 11);
             this.backbtn.Name = "backbtn";
-            this.backbtn.Size = new System.Drawing.Size(75, 23);
+            this.backbtn.Size = new System.Drawing.Size(57, 48);
             this.backbtn.TabIndex = 0;
-            this.backbtn.Text = "Back";
             this.backbtn.UseVisualStyleBackColor = true;
             this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
             // 
@@ -292,13 +289,27 @@
             // 
             // btnExport
             // 
+            this.btnExport.BackColor = System.Drawing.Color.Cyan;
+            this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExport.Location = new System.Drawing.Point(55, 70);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(239, 24);
             this.btnExport.TabIndex = 1;
             this.btnExport.Text = "Export Data";
-            this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.UseVisualStyleBackColor = false;
             this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Image = global::OrdersLK.Properties.Resources.orders;
+            this.label4.Location = new System.Drawing.Point(3, 7);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(146, 57);
+            this.label4.TabIndex = 3;
+            this.label4.Tag = "                    ";
+            this.label4.Text = "           ";
             // 
             // s_home
             // 

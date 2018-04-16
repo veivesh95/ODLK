@@ -32,8 +32,8 @@
             this.delDataGridView = new System.Windows.Forms.DataGridView();
             this.back = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.homebtn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.delDataGridView)).BeginInit();
             this.panel1.SuspendLayout();
@@ -64,11 +64,12 @@
             // 
             // back
             // 
-            this.back.Location = new System.Drawing.Point(1084, 22);
+            this.back.BackgroundImage = global::OrdersLK.Properties.Resources.aaaaaaaaaback;
+            this.back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.back.Location = new System.Drawing.Point(1115, 11);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(75, 23);
+            this.back.Size = new System.Drawing.Size(57, 48);
             this.back.TabIndex = 1;
-            this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = true;
             this.back.Click += new System.EventHandler(this.back_Click);
             // 
@@ -83,6 +84,17 @@
             this.panel1.Size = new System.Drawing.Size(1254, 69);
             this.panel1.TabIndex = 4;
             // 
+            // homebtn
+            // 
+            this.homebtn.BackgroundImage = global::OrdersLK.Properties.Resources.aaaaaaaaaaaa;
+            this.homebtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.homebtn.Location = new System.Drawing.Point(1181, 11);
+            this.homebtn.Name = "homebtn";
+            this.homebtn.Size = new System.Drawing.Size(57, 48);
+            this.homebtn.TabIndex = 4;
+            this.homebtn.UseVisualStyleBackColor = true;
+            this.homebtn.Click += new System.EventHandler(this.homebtn_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -94,16 +106,6 @@
             this.label1.TabIndex = 3;
             this.label1.Tag = "                    ";
             this.label1.Text = "           ";
-            // 
-            // homebtn
-            // 
-            this.homebtn.Location = new System.Drawing.Point(1167, 22);
-            this.homebtn.Name = "homebtn";
-            this.homebtn.Size = new System.Drawing.Size(75, 23);
-            this.homebtn.TabIndex = 4;
-            this.homebtn.Text = "Home";
-            this.homebtn.UseVisualStyleBackColor = true;
-            this.homebtn.Click += new System.EventHandler(this.homebtn_Click);
             // 
             // CheckDeliveryByDeliveryboy
             // 

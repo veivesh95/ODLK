@@ -60,21 +60,23 @@
             // 
             // homebtn
             // 
-            this.homebtn.Location = new System.Drawing.Point(1167, 22);
+            this.homebtn.BackgroundImage = global::OrdersLK.Properties.Resources.aaaaaaaaaaaa;
+            this.homebtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.homebtn.Location = new System.Drawing.Point(1186, 11);
             this.homebtn.Name = "homebtn";
-            this.homebtn.Size = new System.Drawing.Size(75, 23);
+            this.homebtn.Size = new System.Drawing.Size(57, 48);
             this.homebtn.TabIndex = 0;
-            this.homebtn.Text = "Home";
             this.homebtn.UseVisualStyleBackColor = true;
             this.homebtn.Click += new System.EventHandler(this.homebtn_Click);
             // 
             // backbtn
             // 
-            this.backbtn.Location = new System.Drawing.Point(1086, 22);
+            this.backbtn.BackgroundImage = global::OrdersLK.Properties.Resources.aaaaaaaaaback;
+            this.backbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.backbtn.Location = new System.Drawing.Point(1121, 12);
             this.backbtn.Name = "backbtn";
-            this.backbtn.Size = new System.Drawing.Size(75, 23);
+            this.backbtn.Size = new System.Drawing.Size(57, 48);
             this.backbtn.TabIndex = 1;
-            this.backbtn.Text = "Back";
             this.backbtn.UseVisualStyleBackColor = true;
             this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
             // 
@@ -172,24 +174,26 @@
             // 
             // addbtn
             // 
-            this.addbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addbtn.BackColor = System.Drawing.Color.Lime;
+            this.addbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addbtn.Location = new System.Drawing.Point(176, 280);
             this.addbtn.Name = "addbtn";
             this.addbtn.Size = new System.Drawing.Size(97, 35);
             this.addbtn.TabIndex = 12;
             this.addbtn.Text = "Add";
-            this.addbtn.UseVisualStyleBackColor = true;
+            this.addbtn.UseVisualStyleBackColor = false;
             this.addbtn.Click += new System.EventHandler(this.addbtn_Click);
             // 
             // removebtn
             // 
-            this.removebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removebtn.BackColor = System.Drawing.Color.Red;
+            this.removebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.removebtn.Location = new System.Drawing.Point(317, 280);
             this.removebtn.Name = "removebtn";
             this.removebtn.Size = new System.Drawing.Size(89, 35);
             this.removebtn.TabIndex = 13;
             this.removebtn.Text = "Remove";
-            this.removebtn.UseVisualStyleBackColor = true;
+            this.removebtn.UseVisualStyleBackColor = false;
             this.removebtn.Click += new System.EventHandler(this.removebtn_Click);
             // 
             // addproductdgv
@@ -269,13 +273,14 @@
             // 
             // addtoproductbtn
             // 
+            this.addtoproductbtn.BackColor = System.Drawing.Color.Lime;
             this.addtoproductbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addtoproductbtn.Location = new System.Drawing.Point(1027, 415);
             this.addtoproductbtn.Name = "addtoproductbtn";
             this.addtoproductbtn.Size = new System.Drawing.Size(158, 36);
             this.addtoproductbtn.TabIndex = 17;
             this.addtoproductbtn.Text = "ADD PRODUCTS";
-            this.addtoproductbtn.UseVisualStyleBackColor = true;
+            this.addtoproductbtn.UseVisualStyleBackColor = false;
             this.addtoproductbtn.Click += new System.EventHandler(this.addtoproductbtn_Click);
             // 
             // panel1

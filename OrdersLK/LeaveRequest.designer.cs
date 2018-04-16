@@ -47,9 +47,9 @@
             this.leaveyear = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.backbtn = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -148,12 +148,14 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Lime;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(683, 374);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(284, 33);
             this.button1.TabIndex = 15;
             this.button1.Text = "Send Request";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
@@ -205,6 +207,28 @@
             this.panel1.Size = new System.Drawing.Size(1254, 69);
             this.panel1.TabIndex = 21;
             // 
+            // button2
+            // 
+            this.button2.BackgroundImage = global::OrdersLK.Properties.Resources.aaaaaaaaaaaa;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Location = new System.Drawing.Point(1183, 15);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(57, 48);
+            this.button2.TabIndex = 6;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // backbtn
+            // 
+            this.backbtn.BackgroundImage = global::OrdersLK.Properties.Resources.aaaaaaaaaback;
+            this.backbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.backbtn.Location = new System.Drawing.Point(1120, 15);
+            this.backbtn.Name = "backbtn";
+            this.backbtn.Size = new System.Drawing.Size(57, 48);
+            this.backbtn.TabIndex = 5;
+            this.backbtn.UseVisualStyleBackColor = true;
+            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -216,26 +240,6 @@
             this.label9.TabIndex = 3;
             this.label9.Tag = "                    ";
             this.label9.Text = "           ";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(1171, 23);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Home";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
-            // 
-            // backbtn
-            // 
-            this.backbtn.Location = new System.Drawing.Point(1090, 23);
-            this.backbtn.Name = "backbtn";
-            this.backbtn.Size = new System.Drawing.Size(75, 23);
-            this.backbtn.TabIndex = 5;
-            this.backbtn.Text = "Back";
-            this.backbtn.UseVisualStyleBackColor = true;
-            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
             // 
             // LeaveRequest
             // 
