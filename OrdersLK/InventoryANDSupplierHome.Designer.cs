@@ -68,7 +68,7 @@
             this.inventorybtn.Name = "inventorybtn";
             this.inventorybtn.Size = new System.Drawing.Size(203, 152);
             this.inventorybtn.TabIndex = 2;
-            this.inventorybtn.Text = "Invetory Details";
+            this.inventorybtn.Text = "Inventory Details";
             this.inventorybtn.UseVisualStyleBackColor = false;
             this.inventorybtn.Click += new System.EventHandler(this.inventorybtn_Click);
             // 
@@ -80,7 +80,7 @@
             this.purchasedproductbtn.Name = "purchasedproductbtn";
             this.purchasedproductbtn.Size = new System.Drawing.Size(203, 152);
             this.purchasedproductbtn.TabIndex = 3;
-            this.purchasedproductbtn.Text = "Purchased Products";
+            this.purchasedproductbtn.Text = "Purchase Products";
             this.purchasedproductbtn.UseVisualStyleBackColor = false;
             this.purchasedproductbtn.Click += new System.EventHandler(this.purchasedproductbtn_Click);
             // 

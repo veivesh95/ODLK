@@ -20,6 +20,7 @@ namespace OrdersLK
         public SearchUpdateDeleteEmployee()
         {
             InitializeComponent();
+            
         }
 
         SqlDataReader dr;
@@ -171,6 +172,9 @@ namespace OrdersLK
             jobrolecombo.Items.Add("Assistant");
             jobrolecombo.Items.Add("Salesman");
             jobrolecombo.Items.Add("Deliveryboy");
+
+
+            deletebtn.Visible = false;
         }
 
 

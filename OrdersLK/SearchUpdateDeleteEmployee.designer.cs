@@ -108,7 +108,7 @@
             // 
             this.updatebtn.BackColor = System.Drawing.Color.Lime;
             this.updatebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updatebtn.Location = new System.Drawing.Point(848, 496);
+            this.updatebtn.Location = new System.Drawing.Point(954, 496);
             this.updatebtn.Name = "updatebtn";
             this.updatebtn.Size = new System.Drawing.Size(83, 26);
             this.updatebtn.TabIndex = 5;

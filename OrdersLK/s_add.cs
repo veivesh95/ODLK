@@ -181,7 +181,7 @@ namespace OrdersLK
                                 try
                                 {
                                     mailOrder += "------------------------------------------ \n"
-                                        + "Grand total = " + string.Concat(this.count, ".00") + "\n\n Thank you for choosing ORDERS.LK :)";
+                                        + "Grand total = " + string.Concat(this.count, ".00");
 
 
                                     emailThis mail = new emailThis();
