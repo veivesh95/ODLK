@@ -26,7 +26,7 @@ namespace OrdersLK
                 client.DeliveryFormat = SmtpDeliveryFormat.International;
                 client.DeliveryMethod = SmtpDeliveryMethod.Network;
                 client.UseDefaultCredentials = false;
-                client.Credentials = new NetworkCredential("busyfatpanda@gmail.com", "4834345v+");
+                client.Credentials = new NetworkCredential("noreplyorderslk@gmail.com", "Test@123");
 
                 MailMessage msg = new MailMessage();
 

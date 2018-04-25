@@ -60,7 +60,8 @@ namespace OrdersLK
 
         private void PettyCashPage_Load(object sender, EventArgs e)
         {
-
+            fromdatepicker.MaxDate = DateTime.Now.AddDays(1);
+            todatepicker.MaxDate = DateTime.Now.AddDays(1);
 
 
             Functions.DisplayData("PettyCash", PettyCashGridView);
